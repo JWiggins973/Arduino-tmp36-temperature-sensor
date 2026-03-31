@@ -1,15 +1,26 @@
-# Arduino TMP36 Temperature Sensor
+# 🌡️ Arduino TMP36 Temperature Sensor
 
-A C++ embedded systems project simulating a TMP36 temperature sensor on an Arduino Uno.
+> Real-time temperature monitoring built in C++ for an Arduino Uno — 
+> simulated in Tinkercad with live serial output and threshold alerting.
 
-## What it does
-- Reads analog sensor data from pin A0
-- Converts raw values to voltage, Celsius, and Fahrenheit
-- Outputs real-time readings to Serial Monitor every second
-- Triggers a warning alert if temperature exceeds 35°C
+## 🚀 What It Does
+- Reads analog sensor data from pin A0 on the Arduino Uno
+- Converts raw ADC values (0-1023) to voltage, then to Celsius and Fahrenheit
+- Streams live temperature readings to the Serial Monitor every second
+- Triggers a **WARNING** alert when temperature exceeds 35°C
 
-## Simulated with
-Tinkercad Circuits (browser-based Arduino simulator)
+## ⚙️ How It Works
+The TMP36 outputs a voltage proportional to temperature.
+The Arduino reads that voltage via `analogRead()`, converts it using the 
+TMP36 datasheet formula, and prints real-time readings to Serial Monitor.
 
-## Language
-C++
+## 🛠️ Built With
+- **Language:** C++
+- **Hardware:** Arduino Uno R3 + TMP36 Temperature Sensor
+- **Simulator:** Tinkercad Circuits
+
+## 🔴 Live Simulation
+👉 [Click here to view and run the live circuit](https://www.tinkercad.com/things/biehiI6Urgw-dazzling-luulia/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=R8Ma2buNrudY46fk-G-LpWDu1dejCb7gZYEAq0UjGpc)
+
+## 👨🏿‍💻 Author
+Jermaine Wiggins 
